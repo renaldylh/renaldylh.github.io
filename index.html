@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu()"></div>
+
+    <section class="banner" id="home">
+
+        <div class="imgSidebar">
+            <img src="images/Gambar latar 1.jpeg">
+        </div>
+        <div class="contentBx">
+            <h5 class="logoText">My portofolio</h5>
+            <div>
+                <h4><span>Hello,</span>Saya</h4>
+                <h2>Renaldy Luthfiana Hakim</h2>
+                <h4>saya developer web</h4>
+                <p>saya berasal dari kota bandung, lulusan smk 13 bandung tahun 2021. saya memiliki pengalaman magang di Bank BJB Bandung kertawahana sebagai web developer</p>
+                <a href="#about" class="btn">Tentang saya</a>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src="images/facebook.png" ></a></li>
+                <li><a href="#"><img src="images/twitter.png" ></a></li>
+                <li><a href="#"><img src="images/instagram.png" ></a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="title white">
+            <h2>Tentang Saya</h2>
+            <p></p>
+        </div>
+        <div class="content">
+            <div class="textBx">
+                <p>tenang dan disiplin, dapat berkerja mandiri ataupun team, mempunyai pengalaman magang/praktek kerja lapangan di BJB Pusat Kota Bandung. pernah membangun project website monitoring Fasilitas kantor dengan framework django dan js, memenangkan juara 2 sekolah dalam code jam OOP dengan python pada kelas 11,
+                    memiliki kemampuan di website back end dengan bahasa python,js,php. mengikuti pelatihan Cyber Security, pernah mengikuti ekscul seperti PMR, Rohis, dan Banzai. dan Mengikuti pelatihan kepemimpinan.
+                    
+                    saya memiliki hobi di bidang IT dengan menonton dan mempelajari Course pengembangan website, jaringan dan desain, senang membuat pemodelan perangkat lunak.</p>
+            </div>
+            <div class="imgBx">
+                <img src="images/LatarPutih.jpeg">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="title">
+            <h2>kemampuan</h2>
+            <p></p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img src="images/icon1.png" >
+                <h2>Web Desaign</h2>
+                <p>pengembangan dengan javascript,css,html untuk framework bisa dengan viu.js</p>
+            </div>
+            <div class="servicesBx">
+                <img src="images/icon2.png" >
+                <h2>Web Developer </h2>
+                <p>pengembangan dengan php,python untuk framework laravel atau django</p>
+            </div>
+            <div class="servicesBx">
+                <img src="images/icon5.png" >
+                <h2>Penulisan content</h2>
+                <p>Penulisan content dengan banyak tools</p>
+            </div>
+            <div class="servicesBx">
+                <img src="images/icon6.png" >
+                <h2>Editing Video</h2>
+                <p>mengedit video dengan adobe primier pro </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <div class="title"> 
+            <h2>Pekerjaan</h2>
+            <p></p>
+        </div>
+        <div class="content">
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="images/Indexbjb.jpg" >
+                </div>
+                <div class="textBx">
+                    <h3>Project 1</h3>
+                </div>
+            </div>
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="images/loginbjb.jpg" >
+                </div>
+                <div class="textBx">
+                    <h3>Project 2</h3>
+                </div>
+            </div>
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="images/Pengaduanmasyarakat.png" >
+                </div>
+                <div class="textBx">
+                    <h3>Project 3</h3>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title white"> 
+            <h2>contact saya</h2>
+            <p></p>
+        </div>
+        <div class="contactForm">
+            <div class="row">
+                <div class="col50">
+                    <input type="text" name="" placeholder="First Name">
+                </div>
+                <div class="col50">
+                    <input type="text" name="" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col50">
+                    <input type="text" name="" placeholder="Email">
+                </div>
+                <div class="col50">
+                    <input type="text" name="" placeholder="Mobile No">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col100">
+                    <textarea placeholder="Message"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col100">
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>copyright @ 2021 Renaldy. All Right Reserved</p>
+    </div>
+    <div class="sidebar" onclick="toggleMenu()">
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">about</a></li>
+            <li><a href="#services" onclick="toggleMenu();">services</a></li>
+            <li><a href="#work"onclick="toggleMenu();">work</a></li>
+            <li><a href="#"onclick="toggleMenu();">contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector(' .toggle');
+            const sidebar = document.querySelector(' .sidebar');
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
